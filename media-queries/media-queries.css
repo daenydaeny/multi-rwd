@@ -7,6 +7,11 @@
   }
 }
 
+p {
+  display: block;
+  background-color: yellow;
+}
+
 .container {
   background: yellow;
   min-height: 100vh;
@@ -14,6 +19,22 @@
 
 .header {
   background: #34495e;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 1em;
+
+  .brand {
+    background-color: purple;
+    margin-right: auto;
+  }
+
+  .navigation,
+  menu,
+  .menu li {
+    background-color: teal;
+    display: contents;
+  }
 }
 
 .main {
@@ -55,5 +76,31 @@
 @media (width >= 640px) and (width <=1024px) {
   .header {
     height: 20vh;
+  }
+}
+
+/* 데스크탑 디바이스 */
+@media (width >=1024px) {
+  .header {
+    height: 15vh;
+  }
+  .content {
+    height: 70vh;
+    display: flex;
+
+    .main {
+      width: 60%;
+    }
+
+    .secondary {
+      width: 20%;
+    }
+
+    .extra {
+      width: 20%;
+    }
+  }
+  .header {
+    height: 15vh;
   }
 }

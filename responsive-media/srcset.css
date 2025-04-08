@@ -1,1 +1,17 @@
 /* srcset 속성 */
+body {
+  min-width: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+figure {
+  border: 1px solid currentColor;
+  padding: 1em;
+
+  figcaption {
+    text-align: center;
+    margin-top: 1em;
+  }
+}
