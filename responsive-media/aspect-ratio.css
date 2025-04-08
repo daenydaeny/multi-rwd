@@ -1,1 +1,25 @@
 /* 종횡비 : aspect-raio */
+body {
+  margin: 3em;
+}
+
+.case-01 {
+  width: 30vh;
+  aspect-ratio: 1/1;
+  background: yellow;
+  border: 10px solid red;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 0;
+  }
+}
+
+.case-02 {
+  width: 30vh;
+  aspect-ratio: 1/1;
+  border: 10px solid green;
+  background: url(./images/medium-1024.jpg) 0 0 / cover;
+}
