@@ -1,2 +1,59 @@
 /* 미디어 쿼리 */
 @import "./../common/reset.css";
+@layer base {
+  ul,
+  ol {
+    margin: 0;
+  }
+}
+
+.container {
+  background: yellow;
+  min-height: 100vh;
+}
+
+.header {
+  background: #34495e;
+}
+
+.main {
+  background: #3498db;
+}
+
+.secondary {
+  background: #2ecc71;
+}
+
+.extra {
+  background: #e74c3c;
+}
+
+.footer {
+  background: #95a5a6;
+}
+
+/* 모바일 */
+@media (max-width: 640px) {
+  .header {
+    height: 15vh;
+  }
+  .main {
+    height: 40vh;
+  }
+  .secondary {
+    height: 20vh;
+  }
+  .extra {
+    height: 10vh;
+  }
+  .footer {
+    height: 15vh;
+  }
+}
+
+/* 테블릿 */
+@media (width >= 640px) and (width <=1024px) {
+  .header {
+    height: 20vh;
+  }
+}
