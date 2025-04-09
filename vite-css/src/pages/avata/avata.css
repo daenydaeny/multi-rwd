@@ -3,19 +3,24 @@ body {
 }
 
 .avata-list {
+  --columns: 2;
+
   /* background-color: yellow; */
   border: 1px solid var(--gray-500);
   padding: 20px 20px;
   display: grid;
   /* grid-template-columns: 1fr 1fr 1fr 1fr; */
   /* grid-template-columns: repeat(2, 1fr); */
-  grid-template-columns: repeat(2, minmax(120px, 200px));
+  grid-template-columns: repeat(var(--columns), minmax(120px, 200px));
   gap: 20px;
   justify-content: center;
   /* place-self: end; */
 
   @media (width >= 768px) {
-    grid-template-columns: repeat(4, minmax(120px, 200px));
+    --columns: 4;
+  }
+  @media (width >= 1440px) {
+    --columns: 8;
   }
 
   li {
