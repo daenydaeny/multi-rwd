@@ -17,4 +17,10 @@
   --spacing-md: 1.25rem;
   --spacing-lg: 2.5rem;
   --spacing-xl: 3rem;
+
+  --font-xs: 0.625rem; /* 10px */
+  --font-sm: 0.875rem; /* 14px */
+  --font-base: 1rem; /* 16px */
+  --font-lg: 1.125rem; /* 18px */
+  --font-xl: 1.25rem; /* 20px */
 }

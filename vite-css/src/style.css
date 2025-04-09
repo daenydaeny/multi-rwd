@@ -5,3 +5,4 @@
 
 /* 컴포넌트 스타일 */
 @import "./components/avata/avata.css";
+@import "./components/notification/notification.css";
