@@ -1,0 +1,57 @@
+.avata {
+  --size: 200px;
+  /* all: unset; */
+  background: transparent;
+  border: 0;
+  padding: 0;
+  display: inline-flex;
+
+  width: var(--size);
+  aspect-ratio: 1/1;
+  object-fit: cover;
+
+  img {
+    /* border-radius: 50%; */
+    border-radius: calc(var(--size) / 2);
+  }
+
+  span {
+    width: 30%;
+    aspect-ratio: 1/1;
+    background-color: var(--gray-100);
+    border-radius: 50%;
+    flex-shrink: 0;
+    border: 2px solid white;
+  }
+
+  &.online span {
+    background: var(--green-200);
+  }
+}
+
+.pos {
+  position: relative;
+  span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.grid {
+  display: inline-grid;
+  grid-template-columns: var(--size);
+  grid-template-rows: var(--size);
+  img,
+  span {
+    /* grid-area: 1/1/2/2; */
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  span {
+    /* justify-self: end;
+    align-self: end; */
+    place-self: end;
+  }
+}

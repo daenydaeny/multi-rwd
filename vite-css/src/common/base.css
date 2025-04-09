@@ -1,0 +1,10 @@
+body {
+  font-family: "Pretendard Variable", sans-serif;
+  line-height: 1.15;
+  background-color: light-dark(var(--white), var(--black));
+  color: light-dark(var(--black), var(--white));
+}
+
+a {
+  color: inherit;
+}

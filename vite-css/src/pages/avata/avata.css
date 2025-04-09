@@ -1,0 +1,29 @@
+body {
+  margin: 30px !important;
+}
+
+.avata-list {
+  /* background-color: yellow; */
+  border: 1px solid var(--gray-500);
+  padding: 20px 20px;
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+  /* grid-template-columns: repeat(2, 1fr); */
+  grid-template-columns: repeat(2, minmax(120px, 200px));
+  gap: 20px;
+  justify-content: center;
+  /* place-self: end; */
+
+  @media (width >= 768px) {
+    grid-template-columns: repeat(4, minmax(120px, 200px));
+  }
+
+  li {
+    border: 1px solid red;
+    margin-right: 20px;
+  }
+
+  button {
+    --size: 100%;
+  }
+}
