@@ -39,6 +39,7 @@ body {
   /* background-color: yellow; */
   display: flex;
   gap: var(--spacing-md);
+  /* width: 200px; */
   align-items: center;
 
   time {
