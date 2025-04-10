@@ -1,6 +1,11 @@
 @import "tailwindcss";
 
-@theme{
+@theme {
   --font-sans: "Pretendard Variable", sans-serif;
 
+  --text-xl: 100px;
+}
+
+.msg-button {
+  @apply: dark: border-voilet-500 text-sm text-violet-500 border border-gray-500 rounded-2xl p-1;
 }
