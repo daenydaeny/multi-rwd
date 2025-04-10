@@ -1,0 +1,81 @@
+h1 {
+  /* background-color: yellow; */
+}
+
+.logo {
+  display: block;
+  /* display: flex; */
+  /* background-color: yellow; */
+
+  svg {
+    vertical-align: top;
+    width: 24px;
+    aspect-ratio: 1/1;
+  }
+}
+
+.button-gradient {
+  --size: 1.5rem;
+  --start: #06fd10;
+  --end: #00e1ce;
+  --center: #fff;
+
+  display: block;
+  position: relative;
+  border: 0;
+  padding: 0;
+  width: var(--size);
+  aspect-ratio: 1/1;
+  background: yellow linear-gradient(135deg, var(--start), var(--end));
+  border-radius: 50%;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    aspect-ratio: inherit;
+    border-radius: inherit;
+    background: var(--center);
+  }
+}
+
+.input {
+  background-color: yellow;
+  input {
+    --size: 24px;
+    height: 30px;
+    width: 100%;
+    border: 1px solid var(--gray-500);
+    border-radius: 5px;
+    padding: 2px 8px 2px 8px;
+    font-size: var(--font-sm);
+  }
+}
+
+.searchbar {
+  border: 2px solid green;
+  padding: 12px 20px;
+  display: flex;
+  gap: 12px;
+  border-radius: 25px;
+
+  form {
+    display: contents;
+  }
+
+  .input {
+    flex-grow: 1;
+  }
+
+  .logo {
+    flex-shrink: 0;
+  }
+
+  button {
+    margin-left: 4px;
+    flex-shrink: 0;
+  }
+}
