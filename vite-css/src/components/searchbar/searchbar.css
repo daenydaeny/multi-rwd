@@ -66,8 +66,20 @@ h1 {
     display: contents;
   }
 
+  &:focus-within {
+    border-color: red;
+    /* box-shadow: 5px 5px 0 0 #000; */
+  }
+
   .input {
     flex-grow: 1;
+    input {
+      border: 0;
+
+      &:focus {
+        outline: none;
+      }
+    }
   }
 
   .logo {
